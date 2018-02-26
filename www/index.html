@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    </script>
+</head>
+<body class="unselectable">
+	<canvas id="paint-board"></canvas>
+    <div id="colors">
+        <div id="red" class="color"></div>
+        <div id="green" class="color"></div>
+        <div id="blue" class="color"></div>
+        <div id="yellow" class="color"></div>
+    </div>
+    
+    <div id="zoom-controls">
+        <div class="control" id="+">+</div>
+        <div class="zoom">5</div>
+        <div class="control" id="-">-</div>
+        
+        <div class="button" id="clear"><svg style="width:40px;height:40px" viewBox="0 0 24 24">
+    <path fill="#000000" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+</svg></div>
+
+<div class="button" id="default"><svg style="width:40px;height:40px" viewBox="0 0 24 24">
+    <path fill="#000000" d="M12,3A9,9 0 0,0 3,12H0L4,16L8,12H5A7,7 0 0,1 12,5A7,7 0 0,1 19,12A7,7 0 0,1 12,19C10.5,19 9.09,18.5 7.94,17.7L6.5,19.14C8.04,20.3 9.94,21 12,21A9,9 0 0,0 21,12A9,9 0 0,0 12,3M14,12A2,2 0 0,0 12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12Z" />
+</svg></div>
+
+<div class="button" id="triangle"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="#000000" d="M1,21H23L12,2" />
+</svg></div>
+    </div>
+    
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
